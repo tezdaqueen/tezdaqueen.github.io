@@ -4,60 +4,102 @@
   <meta charset="UTF-8">
   <title>Tez Da Queen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: serif;
-      background: #000;
-      color: #d4af37; /* gold */
-      text-align: center;
-      padding: 60px 20px;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-    p {
-      max-width: 700px;
-      margin: 0 auto 30px;
-      line-height: 1.6;
-    }
-    .button {
-      display: inline-block;
-      padding: 15px 35px;
-      border: 1px solid #d4af37;
+      background-color: #000;
       color: #d4af37;
-      text-decoration: none;
-      margin-top: 20px;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 6.8rem;
+      margin-bottom: 35px;
       letter-spacing: 1px;
     }
-    .button:hover {
-      background: #d4af37;
-      color: #000;
+
+    .tilde {
+      font-size: 3.2rem;
+      vertical-align: middle;
+      opacity: 0.85;
+      margin: 0 16px;
     }
-    .locked {
-      margin-top: 40px;
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 45px;
+      font-size: 1.4rem;
       line-height: 2;
     }
+
+    .enter-btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 20px 55px;
+      border: 2px solid #d4af37;
+      color: #d4af37;
+      text-decoration: none;
+      font-size: 1.15rem;
+      letter-spacing: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .enter-btn:hover {
+      background-color: #d4af37;
+      color: #000;
+    }
+
+    .price {
+      margin-top: 15px;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
     .law {
       font-style: italic;
-      margin: 40px auto;
-      max-width: 600px;
+      font-size: 1.65rem;
+      margin: 85px auto;
+      max-width: 720px;
+      line-height: 2;
     }
+
+    .locked {
+      font-size: 1.3rem;
+      line-height: 2.4;
+      margin-top: 70px;
+    }
+
     audio {
-      margin-top: 30px;
+      margin-top: 55px;
+    }
+
+    footer {
+      margin-top: 100px;
+      font-size: 0.85rem;
+      opacity: 0.75;
     }
   </style>
 </head>
+
 <body>
 
-  <h1>Tez Da Queen</h1>
+  <h1>
+    <span class="tilde">~</span> Tez Da Queen <span class="tilde">~</span>
+  </h1>
+
   <p><em>A world, not a website.</em></p>
 
   <p>
     Divine timing. Ever evolving.<br>
-    Documenting life, travel, fashion, business, and spirituality —
-    as I experience it.
+    A living archive of travel, fashion, business, spirituality,
+    and the people within my world.
   </p>
 
   <p>
@@ -65,10 +107,11 @@
     Some things are meant to be accessed.
   </p>
 
-  <a class="button" href="#" onclick="document.getElementById('bg-music').play();">
-    Enter the World
+  <a href="#" class="enter-btn" onclick="document.getElementById('bg-music').play();">
+    ENTER THE WORLD
   </a>
-  <p><small>Access is $5</small></p>
+
+  <div class="price">Access is $5</div>
 
   <div class="law">
     “Anything you feed enough energy to will have power.”<br>
@@ -81,18 +124,17 @@
     🔒 Vetted Places, Brands & Ideas<br>
     🔒 Business Perspectives<br>
     🔒 Spiritual Reflections<br>
-    🔒 <strong>Forbidden Knowledge</strong><br>
+    🔒 Forbidden Knowledge<br>
     🔒 The Inner Circle
   </div>
 
   <audio id="bg-music" loop>
     <source src="music.mp3" type="audio/mpeg">
-    Your browser does not support audio.
   </audio>
 
-  <p style="margin-top:60px; font-size:0.8rem;">
+  <footer>
     © Tez Da Queen — All things in divine timing
-  </p>
+  </footer>
 
 </body>
 </html>
