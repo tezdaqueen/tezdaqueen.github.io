@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome | Tez Da Queen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: radial-gradient(circle at top, #0a0a2a, #000);
+      overflow: hidden;
+      font-family: 'Playfair Display', serif;
+      color: #d4af37;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    /* Stars */
+    body::before, body::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        radial-gradient(2px 2px at 20% 30%, #fff, transparent),
+        radial-gradient(2px 2px at 40% 70%, #9cf, transparent),
+        radial-gradient(1.5px 1.5px at 60% 20%, #f9c, transparent),
+        radial-gradient(2px 2px at 80% 50%, #cfc, transparent),
+        radial-gradient(1.5px 1.5px at 30% 80%, #fc9, transparent);
+      background-repeat: repeat;
+      animation: drift 120s linear infinite;
+      opacity: 0.8;
+    }
+
+    body::after {
+      animation-duration: 200s;
+      opacity: 0.5;
+    }
+
+    @keyframes drift {
+      from { transform: translateY(0); }
+      to { transform: translateY(-1000px); }
+    }
+
+    .welcome-container {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4.5rem;
+      margin-bottom: 20px;
+      text-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 3.2rem;
+      }
+      p {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="welcome-container">
+    <h1>WELCOME</h1>
+
+    <p>
+      You’ve crossed the threshold.<br><br>
+      This space exists beyond the surface — beyond noise, beyond timelines,
+      beyond what is meant for everyone.
+      <br><br>
+      Take a breath.<br>
+      You are exactly where you’re meant to be.
+    </p>
+  </div>
+
+</body>
+</html>
