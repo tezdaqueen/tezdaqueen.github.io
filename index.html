@@ -12,7 +12,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #000;
+      background: #000;
       color: #d4af37;
       font-family: "Playfair Display", serif;
       text-align: center;
@@ -27,31 +27,30 @@
     h1 {
       font-family: "Great Vibes", cursive;
       font-size: 5rem;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     img.hero {
       max-width: 100%;
-      height: auto;
-      border-radius: 14px;
-      margin-bottom: 20px;
+      border-radius: 16px;
+      margin-bottom: 25px;
     }
 
     .tagline {
       display: inline-block;
-      background: rgba(255, 255, 255, 0.85);
-      color: #000;
-      padding: 14px 26px;
-      border-radius: 10px;
+      background: rgba(255,255,255,0.85);
+      color: #d4af37;
+      padding: 14px 28px;
+      border-radius: 12px;
       font-size: 1.3rem;
-      font-weight: 600;
+      font-weight: 700;
       margin-bottom: 50px;
     }
 
     p {
       font-size: 1.1rem;
       line-height: 1.8;
-      margin: 20px 0;
+      margin: 22px 0;
     }
 
     .divider {
@@ -60,9 +59,9 @@
     }
 
     .quote {
-      font-size: 1.7rem;
+      font-size: 1.8rem;
       font-style: italic;
-      margin: 50px 0 10px;
+      margin: 60px 0 10px;
     }
 
     .quote-author {
@@ -71,14 +70,23 @@
     }
 
     .access {
-      font-size: 2rem;
+      font-size: 2.1rem;
       font-weight: bold;
-      margin: 40px 0;
+      margin: 40px 0 10px;
+    }
+
+    .access-sub {
+      font-size: 1.1rem;
+      opacity: 0.9;
     }
 
     footer {
-      margin-top: 80px;
+      margin-top: 90px;
       font-size: 1.1rem;
+    }
+
+    audio {
+      margin-top: 40px;
     }
 
     @media (max-width: 600px) {
@@ -96,20 +104,20 @@
 <body>
   <div class="container">
 
-    <h1>~ Tez Da Queen ~</h1>
+    <h1>Tez Da Queen</h1>
 
     <img src="1000002748.jpg" alt="Tez Da Queen" class="hero">
 
-    <div class="tagline">A World, Not a Website.</div>
+    <div class="tagline">A World. Not a Website.</div>
 
     <p>
       Welcome to the official world of <strong>Tez Da Queen</strong> — a living, breathing archive of experience,
       perspective, and divine timing.
     </p>
 
-    <p>This is a portal. A space that exists intentionally.</p>
+    <p>This is a portal.<br>A space that exists intentionally.</p>
 
-    <p>Some things are meant to be shared. Some things are meant to be accessed.</p>
+    <p>Some things are meant to be shared.<br>Some things are meant to be accessed.</p>
 
     <div class="divider">✦ ✦ ✦</div>
 
@@ -139,8 +147,9 @@
       — Tez Da Queen (Law)
     </div>
 
-    <div class="access">
-      Access is $5
+    <div class="access">Access is $5</div>
+    <div class="access-sub">
+      An intentional energetic exchange to enter this world.
     </div>
 
     <div class="divider">✦ ✦ ✦</div>
@@ -164,4 +173,27 @@
 
     <p>
       🔒 Travel Diaries<br>
-      🔒 Fashion & Expressi
+      🔒 Fashion & Expression<br>
+      🔒 Vetted Places, Brands & Ideas<br>
+      🔒 Business Perspectives<br>
+      🔒 Spiritual Reflections<br>
+      🔒 Forbidden Knowledge<br>
+      🔒 The Inner Circle
+    </p>
+
+    <!-- Background Music -->
+    <audio controls loop>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <footer>
+      <p>
+        This world is not for everyone.<br>
+        But if you feel pulled, it's because you're meant to be here.
+      </p>
+      <p><strong>Tez Da Queen — Ever Evolving</strong></p>
+    </footer>
+
+  </div>
+</body>
+</html>
